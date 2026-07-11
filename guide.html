@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Guide - Flask Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-code-square"></i> Flask Code
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="releases.html">Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="docs.html">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="guide.html">Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/firesmasher-c6/FlaskCode/" target="_blank">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Setup Guide</h1>
+            <p class="lead text-muted">Step-by-step guide to install and configure Flask Code</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Navigation -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="list-group sticky-lg-top" style="top: 80px;">
+                        <a href="#section-1" class="list-group-item list-group-item-action">1. Setup</a>
+                        <a href="#section-2" class="list-group-item list-group-item-action">2. API Key Format</a>
+                        <a href="#section-3" class="list-group-item list-group-item-action">3. Launch Options</a>
+                        <a href="#section-4" class="list-group-item list-group-item-action">4. Basic Commands</a>
+                        <a href="#section-5" class="list-group-item list-group-item-action">5. Provider Tips</a>
+                        <a href="#section-6" class="list-group-item list-group-item-action">6. Troubleshooting</a>
+                        <a href="#section-7" class="list-group-item list-group-item-action">7. Release Guidance</a>
+                        <a href="#section-8" class="list-group-item list-group-item-action">8. GitHub Setup</a>
+                    </div>
+                </div>
+
+                <!-- Main Guide Content -->
+                <div class="col-lg-9">
+                    <!-- Section 1: Setup -->
+                    <section id="section-1" class="mb-5">
+                        <h2 class="mb-4 pb-3 border-bottom">
+                            <span class="badge bg-primary me-2">1</span> Setup
+                        </h2>
+                        <div class="card bg-light border-0 mb-3">
+                            <div class="card-body">
+                                <p class="card-text">Follow these steps to get Flask Code up and running on your system.</p>
+                            </div>
+                        </div>
+
+                        <h5 class="fw-bold mb-3">Prerequisites</h5>
+                        <ul class="mb-4">
+                            <li>Python 3.10 or later installed on your system</li>
+                            <li>pip package manager (usually included with Python)</li>
+                            <li>Valid API keys from at least one supported provider</li>
+                        </ul>
+
+                        <h5 class="fw-bold mb-3">Installation Steps</h5>
+                        <div class="step-box mb-3">
+                            <h6 class="fw-bold">Step 1: Install Python Dependencies</h6>
+                            <pre class="bg-dark text-light p-3 rounded"><code>python -m pip install -r requirements.txt</code></pre>
+                        </div>
+
+                        <div class="step-box mb-3">
+                            <h6 class="fw-bold">Step 2: Create API Keys File</h6>
+                            <pre class="bg-dark text-light p-3 rounded"><code>copy .apikeys_example .apikeys</code></pre>
+                        </div>
+
+                        <div class="step-box mb-3">
+                            <h6 class="fw-bold">Step 3: Configure Your API Keys</h6>
+                            <p>Edit the <code>.apikeys</code> file and replace placeholder values with your actual API keys from:</p>
+                            <ul>
+                                <li><strong>Gemini:</strong> <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a></li>
+                                <li><strong>Groq:</strong> <a href="https://console.groq.com" target="_blank">Groq Console</a></li>
+                                <li><strong>OpenRouter:</strong> <a href="https://openrouter.ai" target="_blank">OpenRouter</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="step-box mb-3">
+                            <h6 class="fw-bold">Step 4: Add Launcher Scripts (Optional)</h6>
+                            <p>Add these PowerShell scripts to a folder in your PATH for convenient access:</p>
+                            <ul>
+                                <li><code>flaskc.ps1</code></li>
+                                <li><code>flaskcode.ps1</code></li>
+                                <li><code>flck.ps1</code></li>
+                                <li><code>bin/launch.py</code> (for GUI)</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Section 2: API Key Format -->
+                    <section id="section-2" class="mb-5">
+                        <h2 class="mb-4 pb-3 border-bottom">
+                            <span class="badge bg-primary me-2">2</span> API Key Format
+                        </h2>
+                        <div class="alert alert-info">
+                            <strong>Note:</strong> Flask Code expects <code>.apikeys</code> in YAML format with specific key names.
+                        </div>
+
+                        <h5 class="fw-bold mb-3">YAML Format</h5>
+                        <p>The <code>.apikeys</code> file should contain three API key slots in this format:</p>
+                        <pre class="bg-dark text-light p-3 rounded mb-3"><code>key_1: AIabc123...
+key_2: AIdef456...
+key_3: AIghi789...</code></pre>
+
+                        <h5 class="fw-bold mb-3">How Keys Are Used</h5>
+                        <ul class="mb-4">
+                            <li><code>key_1</code>, <code>key_2</code>, <code>key_3</code> are provider slots that can hold any API key</li>
+                            <li>You can use the same provider for multiple slots or mix different providers</li>
+                            <li><code>key_3</code> is commonly used for OpenRouter as a fallback</li>
+                            <li>The app also checks the <code>GEMINI_API_KEY</code> environment variable as an extra key source</li>
+                            <li>Comment lines starting with <code>-!</code> are supported and ignored</li>
+                        </ul>
+
+                        <h5 class="fw-bold mb-3">Example Configurations</h5>
+                        <p><strong>Multi-Provider Setup:</strong></p>
+                        <pre class="bg-dark text-light p-3 rounded"><code>key_1: gemini_api_key_here
+key_2: groq_api_key_here
+key_3: openrouter_api_key_here</code></pre>
+
+                        <p><strong>Single Provider (Multiple Accounts):</strong></p>
+                        <pre class="bg-dark text-light p-3 rounded"><code>key_1: gemini_account_1_key
+key_2: gemini_account_2_key
+key_3: gemini_account_3_key</code></pre>
+                    </section>
+
+                    <!-- Section 3: Launch Options -->
+                    <section id="section-3" class="mb-5">
+                        <h2 class="mb-4 pb-3 border-bottom">
+                            <span class="badge bg-primary me-2">3</span> Launch Options
+                        </h2>
+
+                        <h5 class="fw-bold mb-3">Terminal Mode</h5>
+                        <p>Run Flask Code in the terminal for a command-line chat interface:</p>
+                        <pre class="bg-dark text-light p-3 rounded"><code>python main.py</code></pre>
+                        <p class="text-muted small mt-2">Perfect for server environments or users who prefer terminal workflows.</p>
+
+                        <h5 class="fw-bold mb-3 mt-4">GUI Mode</h5>
+                        <p>Launch the Tkinter graphical interface:</p>
+                        <pre class="bg-dark text-light p-3 rounded"><code>python user-interface.py</code></pre>
+                        <p class="text-muted small mt-2">Requires Tkinter to be installed. Offers a polished desktop experience.</p>
+
+                        <h5 class="fw-bold mb-3 mt-4">Using Launcher Scripts</h5>
+                        <p>If you've added scripts to PATH, you can launch from anywhere:</p>
+                        <pre class="bg-dark text-light p-3 rounded"><code>flaskcode        # Launch GUI
+flaskc           # Launch terminal
+flck             # Short alias for terminal</code></pre>
+                    </section>
+
+                    <!-- Section 4: Basic Commands -->
+                    <section id="section-4" class="mb-5">
+                        <h2 class="mb-4 pb-3 border-bottom">
+                            <span class="badge bg-primary me-2">4</span> Basic Commands
+                        </h2>
+                        <p>Use the chat prompt and built-in commands to control the app. Commands are prefixed with a forward slash.</p>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Command</th>
+                                        <th>Syntax</th>
+                                        <th>Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>/register-as</code></td>
+                                        <td><code>/register-as</code></td>
+                                        <td>Create a new user account (opens popup)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/login-as</code></td>
+                                        <td><code>/login-as &lt;name&gt; &lt;password&gt;</code></td>
+                                        <td>Log in to an existing account</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/apikey</code></td>
+                                        <td><code>/apikey &lt;1|2|3&gt;</code></td>
+                                        <td>Switch to API key slot 1, 2, or 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/model</code></td>
+                                        <td><code>/model &lt;name&gt;</code></td>
+                                        <td>Change AI provider (gemini, groq, openrouter)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/help</code></td>
+                                        <td><code>/help</code></td>
+                                        <td>Display all available commands</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/logout</code></td>
+                                        <td><code>/logout</code></td>
+                                        <td>Log out of the current account</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/exit</code></td>
+                                        <td><code>/exit</code></td>
+                                        <td>Close the application</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h5 class="fw-bold mb-3 mt-4">Command Examples</h5>
+                        <pre class="bg-dark text-light p-3 rounded"><code">> /register-as
+>> /login-as alice mypin
+>> /model gemini
+>> /apikey 2
+>> What's the best Python practice for error handling?
+>> /logout
+>> /exit</code></pre>
+                    </section>
+
+                    <!-- Section 5: Provider Tips -->
+                    <section id="section-5" class="mb-5">
+                        <h2 class="mb-4 pb-3 border-bottom">
+                            <span class="badge bg-primary me-2">5</span> Provider Tips
+                        </h2>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header bg-primary text-white">
+                                        <h6 class="mb-0">Gemini (Default)</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="small mb-2"><strong>Command:</strong> <code>/model gemini</code></p>
+                                        <p class="small mb-2"><strong>Strengths:</strong></p>
+                                        <ul class="small">
+                                            <li>Advanced reasoning</li>
+                                            <li>Free tier available</li>
+                                            <li>Multimodal support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header bg-success text-white">
+                                        <h6 class="mb-0">Groq</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="small mb-2"><strong>Command:</strong> <code>/model groq</code></p>
+                                        <p class="small mb-2"><strong>Strengths:</strong></p>
+                                        <ul class="small">
+                                            <li>Very fast inference</li>
+                                            <li>Open-source models</li>
+                                            <li>Cost-effective</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header bg-info text-white">
+                                        <h6 class="mb-0">OpenRouter</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="small mb-2"><strong>Command:</strong> <code>/model openrouter</code></p>
+                                        <p class="small mb-2"><strong>Strengths:</strong></p>
+                                        <ul class="small">
+                                            <li>Access many models</li>
+                                            <li>Easy provider switching</li>
+                                            <li>Unified pricing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="fw-bold mb-3 mt-4">Switching Between Providers</h5>
+                        <pre class="bg-dark text-light p-3 rounded"><code">> /model gemini
+>> How do I optimize this code?
+[Gemini responds...]
+
+>> /model groq
+>> /apikey 2
+>> What about performance?
+[Groq responds...]</code></pre>
+                    </section>
+
+                    <!-- Section 6: Troubleshooting -->
+                    <section id="section-6" class="mb-5">
+                        <h2 class="mb-4 pb-3 border-bottom">
+                            <span class="badge bg-primary me-2">6</span> Common Troubleshooting
+                        </h2>
+
+                        <div class="accordion" id="troubleAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#trouble1">
+                                        GUI does not open
+                                    </button>
+                                </h2>
+                                <div id="trouble1" class="accordion-collapse collapse show" data-bs-parent="#troubleAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Issue:</strong> Running <code>python user-interface.py</code> produces no window</p>
+                                        <p><strong>Solution:</strong></p>
+                                        <ul>
+                                            <li>Ensure Tkinter is installed: <code>python -m tkinter</code></li>
+                                            <li>On Windows: Reinstall Python and check "tcl/tk and IDLE"</li>
+                                            <li>On Linux: <code>sudo apt-get install python3-tk</code></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trouble2">
+                                        .apikeys is missing or invalid
+                                    </button>
+                                </h2>
+                                <div id="trouble2" class="accordion-collapse collapse" data-bs-parent="#troubleAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Issue:</strong> "FileNotFoundError" or "YAML parse error"</p>
+                                        <p><strong>Solution:</strong></p>
+                                        <ul>
+                                            <li>Copy the template: <code>copy .apikeys_example .apikeys</code></li>
+                                            <li>Replace placeholder values with real API keys</li>
+                                            <li>Verify YAML formatting (colons, spacing)</li>
+                                            <li>Ensure file is in the Flask Code root directory</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trouble3">
+                                        Dependency issues
+                                    </button>
+                                </h2>
+                                <div id="trouble3" class="accordion-collapse collapse" data-bs-parent="#troubleAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Issue:</strong> "ModuleNotFoundError" when running</p>
+                                        <p><strong>Solution:</strong></p>
+                                        <pre class="bg-dark text-light p-3 rounded"><code>python -m pip install --upgrade pip
+python -m pip install -r requirements.txt</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 7: Release Guidance -->
+                    <section id="section-7" class="mb-5">
+                        <h2 class="mb-4 pb-3 border-bottom">
+                            <span class="badge bg-primary me-2">7</span> Release Guidance
+                        </h2>
+                        <p>Guidelines for sharing Flask Code with others or deploying to production.</p>
+
+                        <h5 class="fw-bold mb-3">Security Best Practices</h5>
+                        <ul class="mb-4">
+                            <li>Keep <code>.apikeys</code> private and ensure it remains excluded by <code>.gitignore</code></li>
+                            <li>Share <code>.apikeys_example</code> but <strong>never</strong> share the real <code>.apikeys</code> file</li>
+                            <li>Include this guide and <code>README.md</code> in your repository for new users</li>
+                            <li>Document any custom modifications you've made</li>
+                        </ul>
+
+                        <h5 class="fw-bold mb-3">.gitignore Checklist</h5>
+                        <p>Ensure your <code>.gitignore</code> includes:</p>
+                        <pre class="bg-dark text-light p-3 rounded"><code">.apikeys
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/</code></pre>
+                    </section>
+
+                    <!-- Section 8: GitHub Setup -->
+                    <section id="section-8" class="mb-5">
+                        <h2 class="mb-4 pb-3 border-bottom">
+                            <span class="badge bg-primary me-2">8</span> Recommended GitHub Setup
+                        </h2>
+                        <p>Steps to prepare Flask Code for version control and team collaboration.</p>
+
+                        <h5 class="fw-bold mb-3">Repository Structure</h5>
+                        <pre class="bg-dark text-light p-3 rounded"><code>flask-code/
+├── README.md              # Project overview
+├── Guide.md               # This setup guide
+├── main.py                # Terminal entry point
+├── user-interface.py      # GUI entry point
+├── requirements.txt       # Dependencies
+├── .apikeys_example       # Template (safe to commit)
+├── .apikeys               # NEVER commit!
+└── .gitignore             # Include .apikeys</code></pre>
+
+                        <h5 class="fw-bold mb-3">Initial Setup Steps</h5>
+                        <ol>
+                            <li>Add <code>README.md</code> and <code>Guide.md</code> to the repository root</li>
+                            <li>Keep <code>.gitignore</code> updated with <code>.apikeys</code></li>
+                            <li>Include <code>requirements.txt</code> for dependency management</li>
+                            <li>Create a <code>.apikeys_example</code> template for new users</li>
+                            <li>Push to GitHub with clear documentation</li>
+                        </ol>
+
+                        <div class="alert alert-success mt-4">
+                            <strong>✓ Ready to Share!</strong> Your Flask Code repository is now ready for team collaboration.
+                        </div>
+                    </section>
+
+                    <!-- Quick Reference Card -->
+                    <section id="quick-ref" class="mb-5">
+                        <div class="card bg-primary text-white">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="bi bi-lightning"></i> Quick Reference</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="mb-2">Installation</h6>
+                                        <pre class="bg-dark text-light p-2 rounded small"><code>pip install -r requirements.txt
+copy .apikeys_example .apikeys
+# Edit .apikeys with your keys</code></pre>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="mb-2">Launch</h6>
+                                        <pre class="bg-dark text-light p-2 rounded small"><code>python main.py      # Terminal
+python user-interface.py  # GUI
+flaskcode            # If in PATH</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold mb-3">Flask Code</h6>
+                    <p class="text-muted">An AI-powered coding assistant for Windows developers.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="releases.html" class="text-muted text-decoration-none">Releases</a></li>
+                        <li><a href="docs.html" class="text-muted text-decoration-none">Documentation</a></li>
+                        <li><a href="guide.html" class="text-muted text-decoration-none">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Social</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://github.com/firesmasher-c6/FlaskCode/" class="text-muted text-decoration-none" target="_blank"><i class="bi bi-github"></i> GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 Flask Code. Released under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<style>
+html, body {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none !important;
+}
+</style>
