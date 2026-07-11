@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512"
+     height="512"
+     viewBox="0 0 512 512">
+
+    <!-- Background -->
+    <circle
+        cx="256"
+        cy="256"
+        r="228"
+        fill="#2f333b"/>
+
+    <!-- Left bracket -->
+    <path
+        d="M220 145
+           L128 256
+           L220 367"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="34"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+    <!-- Right bracket -->
+    <path
+        d="M292 145
+           L384 256
+           L292 367"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="34"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+</svg>
