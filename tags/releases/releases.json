@@ -24,7 +24,7 @@
                     "main.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/main.py",
                     "markdown_highlighter.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/markdown_highlighter.py",
                     "openrouter_client.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/openrouter_client.py",
-                    "prompt_mpde.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/prompt_mode.py",
+                    "prompt_mode.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/prompt_mode.py",
                     "saved_info.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/saved_info.py",
                     "shell_actions.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/shell_actions.py",
                     "user-interface.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/user-interface.py",
