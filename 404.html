@@ -7,40 +7,49 @@
     <link class="icon" href="assets/icons/icon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../../../assets/style.css">
+    <link rel="icon" href="assets/icons/404.png">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="d-flex flex-column justify-content-between style-wrapper">
 
-    <!-- Hero Section -->
-    <section class="hero-section flex-grow-1 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%); color: white; padding: 2rem 0;">            
-        <div class="container">
-            <!-- Centered 404 Section -->
+    <!-- Hero Section with Animated Canvas Background -->
+    <section class="hero-section flex-grow-1 d-flex align-items-center justify-content-center position-relative overflow-hidden" style="background: #091a36; color: white; padding: 1.5rem 0;">            
+        <!-- Floating Interactive Particle Matrix Canvas -->
+        <canvas id="matrixCanvas" class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.15; pointer-events: none;"></canvas>
+        
+        <div class="container position-relative style-z-index">
+            <!-- Centered 404 Section with Orchestrated Staggered Animations -->
             <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h2 class="display-1 fw-black text-uppercase tracking-wider mb-1" style="color: white; font-weight: 900; opacity: 0.25; line-height: 1;">404</h2>
-                    <h3 class="display-6 fw-bold mb-3" style="color: white;">Page Not Found</h3>
+                <div class="col-md-8 text-center entry-orchestration">
+                    <h2 class="display-1 fw-black text-uppercase tracking-wider mb-0 glitch-effect" data-text="404" style="font-weight: 900; line-height: 1;">404</h2>
+                    <h3 class="display-6 fw-bold mb-3 title-fade" style="color: #0dcaf0;">Page Not Found</h3>
                     
                     <!-- Toggle Details Arrow Button -->
-                    <button class="btn btn-link text-white text-decoration-none p-0 mb-3 small d-inline-flex align-items-center opacity-75" 
+                    <button class="btn btn-link text-white text-decoration-none p-0 mb-3 small d-inline-flex align-items-center opacity-75 btn-hover-grow" 
                             type="button" 
                             data-bs-toggle="collapse" 
                             data-bs-target="#errorDetails" 
                             aria-expanded="false" 
                             aria-controls="errorDetails"
                             id="toggleBtn">
-                        More Details <i class="bi bi-chevron-down ms-1 transition-icon"></i>
+                        Technical Diagnostics <i class="bi bi-chevron-down ms-1 transition-icon"></i>
                     </button>
 
-                    <!-- Hidden Error Paragraph -->
-                    <div class="collapse" id="errorDetails">
-                        <p class="small mb-4" style="color: rgba(255, 255, 255, 0.85); max-width: 500px; margin: 0 auto 1.5rem;">
-                            The page you are looking for might have been removed or is temporarily unavailable.
-                        </p>
+                    <!-- Hidden Error Paragraph & Deep Technical Diagnostics Matrix -->
+                    <div class="collapse content-transition" id="errorDetails">
+                        <div class="card card-body border-0 bg-dark bg-opacity-70 text-start mx-auto p-3 mb-3 text-matrix small" style="max-width: 600px; border-left: 3px solid #0d6efd !important; max-height: 220px; overflow-y: auto;">
+                            <p class="mb-2 text-white-50 border-bottom border-secondary border-opacity-25 pb-1">
+                                <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i><strong>HTTP 404:</strong> The requested resource path could not be resolved by the core application routing engine.
+                            </p>
+                            <p class="font-monospace text-success entry-matrix-code row g-0">
+                                The requested source could not be found. This page may be unavailable or temporarily removed.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="mt-2">
-                        <a href="index.html" class="btn btn-light btn-md px-4 shadow-sm fw-bold" style="color: #0d6efd;">
-                            <i class="bi bi-house-door-fill me-2"></i>Back to Home
+                    <div class="mt-2 button-fade">
+                        <a href="index.html" class="btn btn-outline-light btn-md px-4 shadow-sm fw-bold btn-hover-pulse" style="border-radius: 50px;">
+                            <i class="bi bi-arrow-left me-2"></i>Return to Home
                         </a>
                     </div>
                 </div>
@@ -48,39 +57,39 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-3">
+    <!-- Animated Footer -->
+    <footer class="bg-dark text-white py-3 border-top border-secondary border-opacity-25 footer-slide-in">
         <div class="container">
             <div class="row g-3">
-                <div class="col-md-6">
-                    <h6 class="fw-bold mb-2 fs-6">Flask Code</h6>
-                    <p class="small mb-0" style="color: white;">An AI-powered coding assistant for Windows developers.</p>
+                <div class="col-md-6 text-slide-left">
+                    <h6 class="fw-bold mb-2 fs-6 text-info">Flask Code</h6>
+                    <p class="small mb-0 text-white-50">An AI-powered coding assistant for Windows developers. Engineered with adaptive semantic routers and multi-provider workspace configuration.</p>
                 </div>
-                <div class="col-md-3">
-                    <h6 class="fw-bold mb-2 fs-6">Links</h6>
+                <div class="col-md-3 link-stagger">
+                    <h6 class="fw-bold mb-2 fs-6 text-info">Links</h6>
                     <ul class="list-unstyled small mb-0">
-                        <li><a href="releases.html" style="color: white; text-decoration: none;">Releases</a></li>
-                        <li><a href="docs.html" style="color: white; text-decoration: none;">Documentation</a></li>
-                        <li><a href="guide.html" style="color: white; text-decoration: none;">Guide</a></li>
+                        <li class="mb-1"><a href="releases.html" class="footer-link">Releases</a></li>
+                        <li class="mb-1"><a href="docs.html" class="footer-link">Documentation</a></li>
+                        <li><a href="guide.html" class="footer-link">Guide</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h6 class="fw-bold mb-2 fs-6">Social</h6>
+                <div class="col-md-3 link-stagger">
+                    <h6 class="fw-bold mb-2 fs-6 text-info">Social</h6>
                     <ul class="list-unstyled small mb-0">
-                        <li><a href="https://github.com/firesmasher-c6/FlaskCode/" style="color: white; text-decoration: none;" target="_blank"><i class="bi bi-github"></i> GitHub</a></li>
+                        <li><a href="https://github.com/firesmasher-c6/FlaskCode/" class="footer-link" target="_blank"><i class="bi bi-github me-1"></i> GitHub Repository</a></li>
                     </ul>
                 </div>
             </div>
-            <hr class="bg-secondary my-2">
-            <div class="text-center text-muted small">
-                <p class="mb-0" style="font-size: 0.8rem;">&copy; 2026 Flask Code. Released under MIT License.</p>
+            <hr class="bg-secondary my-2 opacity-25">
+            <div class="text-center text-muted small copyright-fade">
+                <p class="mb-0" style="font-size: 0.8rem; letter-spacing: 0.5px;">&copy; 2026 Flask Code. Released under MIT License.</p>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Smoothly flips the arrow icon depending on collapse state
+        // Collapsible element controls and icon state rotation
         const toggleBtn = document.getElementById('toggleBtn');
         const collapseEl = document.getElementById('errorDetails');
         const icon = toggleBtn.querySelector('.transition-icon');
@@ -91,17 +100,69 @@
         collapseEl.addEventListener('hide.bs.collapse', () => {
             icon.style.transform = 'rotate(0deg)';
         });
+
+        // Background Matrix / Particle Canvas Script
+        const canvas = document.getElementById('matrixCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        });
+
+        const numNodes = 45;
+        const nodes = Array.from({ length: numNodes }, () => ({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 0.6,
+            vy: (Math.random() - 0.5) * 0.6
+        }));
+
+        function drawMatrixGrid() {
+            ctx.clearRect(0, 0, width, height);
+            ctx.strokeStyle = 'rgba(13, 202, 240, 0.04)';
+            ctx.lineWidth = 1;
+
+            // Render background coordinate mesh grids
+            for(let i = 0; i < width; i += 60) {
+                ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, height); ctx.stroke();
+            }
+            for(let j = 0; j < height; j += 60) {
+                ctx.beginPath(); ctx.moveTo(0, j); ctx.lineTo(width, j); ctx.stroke();
+            }
+
+            // Draw system network points
+            nodes.forEach(node => {
+                node.x += node.vx;
+                node.y += node.vy;
+
+                if (node.x < 0 || node.x > width) node.vx *= -1;
+                if (node.y < 0 || node.y > height) node.vy *= -1;
+
+                ctx.fillStyle = 'rgba(13, 110, 253, 0.4)';
+                ctx.beginPath();
+                ctx.arc(node.x, node.y, 2, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            requestAnimationFrame(drawMatrixGrid);
+        }
+        drawMatrixGrid();
     </script>
 </body>
 </html>
 
 <style>
+/* Viewport Dimension Restrictions (Force No Scroll) */
 html, body.style-wrapper {
   height: 100vh !important;
   max-height: 100vh !important;
   overflow: hidden !important;
   margin: 0;
   padding: 0;
+  background-color: #091a36;
 }
 
 html, body {
@@ -115,7 +176,134 @@ body::-webkit-scrollbar,
   display: none !important;
 }
 
-.transition-icon {
-  transition: transform 0.2s ease-in-out;
+.style-z-index { z-index: 2; }
+
+/* Custom inner card scrollbar configuration for diagnostics log matrix */
+.text-matrix::-webkit-scrollbar {
+  width: 4px !important;
+  display: block !important;
 }
+.text-matrix::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+.text-matrix::-webkit-scrollbar-thumb {
+  background: rgba(13, 202, 240, 0.3);
+  border-radius: 2px;
+}
+
+/* --- CORE ANIMATION ORCHESTRATION --- */
+
+/* Glitch Animation Sequence for 404 Title Header */
+.glitch-effect {
+  position: relative;
+  color: rgba(255, 255, 255, 0.2) !important;
+  animation: glitchPulse 4s infinite alternate;
+}
+.glitch-effect::before, .glitch-effect::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: transparent;
+}
+.glitch-effect::before {
+  left: 2px;
+  text-shadow: -1px 0 #0d6efd;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitchEffects 5s infinite linear alternate-reverse;
+}
+.glitch-effect::after {
+  left: -2px;
+  text-shadow: -1px 0 #0dcaf0;
+  clip: rect(85px, 450px, 140px, 0);
+  animation: glitchEffects 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitchPulse {
+  0% { transform: scale(1); opacity: 0.15; }
+  100% { transform: scale(1.02); opacity: 0.25; }
+}
+@keyframes glitchEffects {
+  0% { clip: rect(31px, 9999px, 94px, 0); }
+  10% { clip: rect(112px, 9999px, 76px, 0); }
+  20% { clip: rect(85px, 9999px, 5px, 0); }
+  30% { clip: rect(27px, 9999px, 115px, 0); }
+  40% { clip: rect(73px, 9999px, 29px, 0); }
+  50% { clip: rect(118px, 9999px, 142px, 0); }
+  60% { clip: rect(18px, 9999px, 93px, 0); }
+  70% { clip: rect(64px, 9999px, 11px, 0); }
+  80% { clip: rect(132px, 9999px, 88px, 0); }
+  90% { clip: rect(41px, 9999px, 124px, 0); }
+  100% { clip: rect(67px, 9999px, 53px, 0); }
+}
+
+/* Central Entrance Transitions */
+.entry-orchestration .glitch-effect { animation: entryUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.entry-orchestration .title-fade { opacity: 0; animation: entryUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards; }
+.entry-orchestration #toggleBtn { opacity: 0; animation: entryUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards; }
+.entry-orchestration .button-fade { opacity: 0; animation: entryUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards; }
+
+@keyframes entryUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mechanical Text Line-by-Line Entry for Diagnostics Terminal */
+.entry-matrix-code div {
+  opacity: 0;
+  transform: translateX(-5px);
+  animation: codeTerminalSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.collapse.show .entry-matrix-code div:nth-of-type(odd) { animation-delay: 0.05s; }
+.collapse.show .entry-matrix-code div:nth-of-type(even) { animation-delay: 0.15s; }
+
+@keyframes codeTerminalSlide {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Footer Section Orchestration */
+.footer-slide-in {
+  animation: footerSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+.text-slide-left { opacity: 0; animation: entryLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both; }
+.link-stagger:nth-of-type(2) { opacity: 0; animation: entryLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both; }
+.link-stagger:nth-of-type(3) { opacity: 0; animation: entryLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both; }
+.copyright-fade { opacity: 0; animation: entryUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both; }
+
+@keyframes footerSlideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+@keyframes entryLeft {
+  from { opacity: 0; transform: translateX(-15px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Footer Hyperlinks Interactivity and Micro-animations */
+.footer-link {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.footer-link:hover {
+  color: #0dcaf0 !important;
+  transform: translateX(4px);
+}
+
+/* Primary Navigation Button Elastic Hover Grow */
+.btn-hover-pulse {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.25s, color 0.25s;
+}
+.btn-hover-pulse:hover {
+  transform: scale(1.05);
+  background-color: #0dcaf0 !important;
+  border-color: #0dcaf0 !important;
+  color: #091a36 !important;
+}
+
+/* Interaction Controls Utilities */
+.btn-hover-grow { transition: transform 0.2s ease, opacity 0.2s ease; }
+.btn-hover-grow:hover { transform: scale(1.03); opacity: 1 !important; }
+.transition-icon { transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
+.content-transition { transition: cubic-bezier(0.16, 1, 0.3, 1) 0.4s; }
 </style>
