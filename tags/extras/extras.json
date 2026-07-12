@@ -1,0 +1,21 @@
+{
+    "extras": {
+        "type": "optional",
+        "assets": {
+            "FlaskCode Config Extension": {
+                "type": "Visual Studio Code Extension",
+                "author": "firesmasher-c6",
+                "fileName": "flask-config-highlighter-1.6.0.vsix",
+                "description": "Highlights every syntax and problems on your vs code ide.",
+                "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode/blob/main/.vscode/flask-config-highlighter-1.6.0.vsix"
+            },
+            "Knowledge SQLite Database": {
+                "type": "Knowledge Database",
+                "author": "firesmasher-c6",
+                "fileName": "knowledge.db",
+                "description": "Flask Code Server & Client-side Offline Knowledge.",
+                "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode/blob/main/knowledge.db"
+            }
+        }
+    }
+}
