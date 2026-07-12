@@ -87,6 +87,11 @@
                     "type": "Knowledge Database",
                     "description": "Flask Code Server & Client-side Offline Knowledge.",
                     "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode/blob/main/knowledge.db"
+                },
+                "docs.html": {
+                    "type": "Documentation Page",
+                    "description": "Documentation Guide",
+                    "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode-Website/blob/main/docs.html"
                 }
             }
         }
