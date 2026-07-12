@@ -75,25 +75,11 @@
         }
     },
     {
-        "extras": {
-            "type": "optional",
-            "assets": {
-                "flask-config-highlighter-1.6.0.vsix": {
-                    "type": "Visual Studio Code Extension",
-                    "description": "Highlights every syntax and problems on your vs code ide.",
-                    "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode/blob/main/.vscode/flask-config-highlighter-1.6.0.vsix"
-                },
-                "knowledge.db": {
-                    "type": "Knowledge Database",
-                    "description": "Flask Code Server & Client-side Offline Knowledge.",
-                    "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode/blob/main/knowledge.db"
-                },
-                "docs.html": {
-                    "type": "Documentation Page",
-                    "description": "Documentation Guide",
-                    "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode-Website/blob/main/docs.html"
-                }
-            }
+        "installer-extras": {
+            "name": "FlaskCode Extras Installer",
+            "isStable": "true",
+            "author": "firesmasher-c6",
+            "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode/releases/download/v1.2/FlaskCodeExtrasInstaller.bat"
         }
     }
 ]
