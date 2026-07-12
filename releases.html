@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="z-index: 1030;">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
                 <i class="bi bi-code-square"></i> Flask Code
@@ -21,18 +20,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="releases.html">Releases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="docs.html">Documentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="guide.html">Guide</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="releases.html">Releases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="docs.html">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guide.html">Guide</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/firesmasher-c6/FlaskCode/" target="_blank">
                             <i class="bi bi-github"></i> GitHub
@@ -43,7 +34,6 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
     <section class="bg-light py-5">
         <div class="container">
             <h1 class="display-5 fw-bold mb-3">Releases</h1>
@@ -51,54 +41,205 @@
         </div>
     </section>
 
-    <!-- Releases List -->
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <!-- Version 1.2 Card -->
-                    <div class="card mb-4 shadow-sm border-0">
-                        <div class="card-header bg-gradient text-white py-3">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <div>
-                                    <h5 class="mb-1" style="color: black;">Flask Code 1.2</h5>
-                                    <small class="opacity-75" style="color: black;">July 11, 2026</small>
-                                </div>
-                                <span class="badge bg-success ms-3">Latest</span>
+                <!-- Sidebar -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header bg-dark text-white py-3">
+                                <span class="fw-bold"><i class="bi bi-collection me-2"></i>Editions</span>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title mb-3">First Official Release</h6>
-                            <p class="card-text text-muted mb-4">Multi-provider AI agent support with comprehensive API key management, persistent user authentication, and a polished Tkinter-based GUI.</p>
-                            
-                            <div class="mb-4">
-                                <h6 class="fw-bold mb-2">Highlights:</h6>
-                                <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Multi-provider support (Gemini, OpenRouter, Groq)</li>
-                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>GUI & Terminal interfaces</li>
-                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Persistent user accounts with PIN authentication</li>
-                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>API key slot management</li>
-                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Markdown-style output rendering</li>
-                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Built-in command system</li>
-                                </ul>
-                            </div>
-
-                            <div class="d-flex gap-2">
-                                <a href="releases/version/1.2.html" class="btn btn-primary">
-                                    <i class="bi bi-info-circle"></i> View Release
+                            <div class="list-group list-group-flush" id="editionNav">
+                                <a href="#" class="list-group-item list-group-item-action edition-tab active" data-tab="client-side">
+                                    <i class="bi bi-window me-2"></i>
+                                    <div>
+                                        <div class="fw-semibold">Client-Side</div>
+                                        <small class="text-muted">Tkinter GUI app</small>
+                                    </div>
                                 </a>
-                                <a href="https://github.com/firesmasher-c6/FlaskCode/" class="btn btn-outline-secondary" target="_blank">
-                                    <i class="bi bi-github"></i> Repository
+                                <a href="#" class="list-group-item list-group-item-action edition-tab" data-tab="client">
+                                    <i class="bi bi-terminal me-2"></i>
+                                    <div>
+                                        <div class="fw-semibold">Client</div>
+                                        <small class="text-muted">Terminal client (flaskcc)</small>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action edition-tab" data-tab="linux-server">
+                                    <i class="bi bi-hdd-rack me-2"></i>
+                                    <div>
+                                        <div class="fw-semibold">Linux Server</div>
+                                        <small class="text-muted">Flask REST API server</small>
+                                    </div>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9">
+
+                    <!-- Client-Side Tab -->
+                    <div id="tab-client-side" class="edition-content">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-header bg-gradient text-white py-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="mb-1" style="color: black;">Flask Code 1.2 — Client-Side</h5>
+                                        <small class="opacity-75" style="color: black;">July 11, 2026</small>
+                                    </div>
+                                    <span class="badge bg-success ms-3">Latest</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-3">First Official Release</h6>
+                                <p class="card-text text-muted mb-4">The original Flask Code desktop app — a polished Tkinter GUI with multi-provider AI support, PIN-based authentication, and built-in command system. Runs standalone on Windows.</p>
+                                <div class="mb-4">
+                                    <h6 class="fw-bold mb-2">Highlights:</h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Multi-provider support (Gemini, OpenRouter, Groq)</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tkinter GUI interface</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Persistent user accounts with PIN authentication</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>API key slot management</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Markdown-style output rendering</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Built-in command system</li>
+                                    </ul>
+                                </div>
+                                <div class="alert alert-info mb-4">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    <strong>Platform:</strong> Windows &nbsp;|&nbsp; <strong>Requires:</strong> Python 3.9+, Tkinter
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <a href="releases/client-side/1.2.html" class="btn btn-primary">
+                                        <i class="bi bi-info-circle"></i> View Release
+                                    </a>
+                                    <a href="https://github.com/firesmasher-c6/FlaskCode/" class="btn btn-outline-secondary" target="_blank">
+                                        <i class="bi bi-github"></i> Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client Tab -->
+                    <div id="tab-client" class="edition-content d-none">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-header bg-gradient text-white py-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="mb-1" style="color: black;">Flask Code 1.2 — Client (flaskcc)</h5>
+                                        <small class="opacity-75" style="color: black;">July 12, 2026</small>
+                                    </div>
+                                    <span class="badge bg-success ms-3">Latest</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-3">Terminal Client for FlaskCode-Server</h6>
+                                <p class="card-text text-muted mb-4">A feature-complete, zero-dependency terminal client (<code>flaskcc</code>) that connects to a running FlaskCode-Server instance. Pure Python 3.9+ stdlib — no installs required.</p>
+                                <div class="mb-4">
+                                    <h6 class="fw-bold mb-2">Highlights:</h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Zero dependencies — pure Python stdlib</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cross-platform: Linux, macOS, Windows (PS launcher included)</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Encrypted connection support (SHA256 / SHA1 / Base64)</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Full auth, chat, file, notes, and API key commands</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Auto-login and PIN login support</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Interactive code-block save prompt</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="fw-bold mb-2">Quick Start:</h6>
+                                    <pre class="bg-dark p-3 rounded"><code># Linux / macOS
+./flaskcc.sh localhost@5000
+
+# Windows (PowerShell)
+.\flaskcc.ps1 localhost@5000 -Pass mySecret
+
+# Cross-platform
+python flaskcc.py localhost@5000</code></pre>
+                                </div>
+                                <div class="alert alert-info mb-4">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    <strong>Platform:</strong> Cross-platform &nbsp;|&nbsp; <strong>Requires:</strong> Python 3.9+ &nbsp;|&nbsp; <strong>Archive:</strong> <code>flaskcode-client.tar.gz</code>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <a href="releases/client/1.2.html" class="btn btn-primary">
+                                        <i class="bi bi-info-circle"></i> View Release
+                                    </a>
+                                    <a href="https://github.com/firesmasher-c6/FlaskCode/" class="btn btn-outline-secondary" target="_blank">
+                                        <i class="bi bi-github"></i> Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linux Server Tab -->
+                    <div id="tab-linux-server" class="edition-content d-none">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-header bg-gradient text-white py-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="mb-1" style="color: black;">Flask Code 1.2 — Linux Server</h5>
+                                        <small class="opacity-75" style="color: black;">July 12, 2026</small>
+                                    </div>
+                                    <span class="badge bg-success ms-3">Latest</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-3">Flask REST API Server</h6>
+                                <p class="card-text text-muted mb-4">Linux-only Flask REST API backend. Runs an HTTP server alongside an interactive admin console in the same process. Designed to be accessed by <code>flaskcc</code> clients over the network.</p>
+                                <div class="mb-4">
+                                    <h6 class="fw-bold mb-2">Highlights:</h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Multi-provider AI (Gemini, Groq, OpenRouter)</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Full REST API (auth, chat, files, knowledge, API keys)</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Persistent user accounts with PIN authentication</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Markov-based local knowledge engine</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Interactive admin console (or daemon mode)</li>
+                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Bash command execution via <code>shell_actions.py</code></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="fw-bold mb-2">Quick Start:</h6>
+                                    <pre class="bg-dark p-3 rounded"><code>pip install -r requirements.txt
+
+# Localhost only
+python server.py
+
+# Public (LAN/remote)
+python server.py --public --port 5000
+
+# Daemon mode
+python server.py --no-console</code></pre>
+                                </div>
+                                <div class="alert alert-warning mb-4">
+                                    <i class="bi bi-exclamation-triangle me-2"></i>
+                                    <strong>Linux only.</strong> Shell actions and file paths are Linux-specific.
+                                </div>
+                                <div class="alert alert-info mb-4">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    <strong>Platform:</strong> Linux &nbsp;|&nbsp; <strong>Requires:</strong> Python 3.9+, pip &nbsp;|&nbsp; <strong>Archive:</strong> <code>flaskcode-server.tar.gz</code>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <a href="releases/servers/linux/1.2.html" class="btn btn-primary">
+                                        <i class="bi bi-info-circle"></i> View Release
+                                    </a>
+                                    <a href="https://github.com/firesmasher-c6/FlaskCode/" class="btn btn-outline-secondary" target="_blank">
+                                        <i class="bi bi-github"></i> Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
             <div class="row">
@@ -128,18 +269,45 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivjs.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.edition-tab').forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = this.dataset.tab;
+
+                document.querySelectorAll('.edition-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                document.querySelectorAll('.edition-content').forEach(c => c.classList.add('d-none'));
+                document.getElementById('tab-' + target).classList.remove('d-none');
+            });
+        });
+    </script>
+    <style>
+        .edition-tab {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-left: 3px solid transparent !important;
+            border-radius: 0 !important;
+            transition: all 0.2s ease;
+        }
+        .edition-tab:hover {
+            border-left-color: #0d6efd !important;
+            background-color: #f8f9fa;
+        }
+        .edition-tab.active {
+            border-left-color: #0d6efd !important;
+            background-color: #e7f1ff;
+            color: #0d6efd;
+        }
+        .edition-tab.active small {
+            color: #6c757d !important;
+        }
+        html, body { scrollbar-width: none !important; -ms-overflow-style: none !important; }
+        html::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar { display: none !important; }
+    </style>
 </body>
 </html>
-<style>
-html, body {
-  scrollbar-width: none !important;
-  -ms-overflow-style: none !important;
-}
-
-html::-webkit-scrollbar, 
-body::-webkit-scrollbar,
-*::-webkit-scrollbar {
-  display: none !important;
-}
-</style>

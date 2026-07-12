@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Code 1.2 – Client Release</title>
+    <link rel="icon" href="../../assets/icons/icon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../index.html">
+                <i class="bi bi-code-square"></i> Flask Code
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../releases.html">Releases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../docs.html">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../guide.html">Guide</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/firesmasher-c6/FlaskCode/" target="_blank">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="py-3" style="background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="../../index.html" style="color: #0d6efd; text-decoration: none; font-weight: 500;">Home</a></li>
+                <li class="breadcrumb-item"><a href="../../releases.html" style="color: #0d6efd; text-decoration: none; font-weight: 500;">Releases</a></li>
+                <li class="breadcrumb-item"><a href="#" style="color: #0d6efd; text-decoration: none; font-weight: 500;">Client</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="color: #212529; font-weight: 500;">Version 1.2</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Release Header -->
+    <section class="py-5 bg-gradient text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-2" style="color: black;">Flask Code 1.2</h1>
+            <p class="lead mb-3" style="color: black;">Client (flaskcc) — First Official Release</p>
+            <div class="d-flex gap-3 flex-wrap">
+                <span class="badge bg-success fs-6">Latest</span>
+                <span class="badge bg-info fs-6">Stable</span>
+                <span class="badge bg-secondary fs-6">July 11, 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-lg-8">
+
+                    <!-- Download Card -->
+                    <div class="card shadow-lg border-0 mb-5">
+                        <div class="card-header bg-primary text-white py-4">
+                            <h5 class="mb-0"><i class="bi bi-download"></i> Download</h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="p-4 bg-light rounded">
+                                        <h6 class="fw-bold mb-2">FlaskCode Universal Installer</h6>
+                                        <p class="text-muted small mb-3">Automatically installs selected version, edition.</p>
+                                        <a href="https://github.com/firesmasher-c6/FlaskCode/releases/download/v1.2/FlaskCodeInstaller.bat" class="btn btn-primary w-100" target="_blank">
+                                            <i class="bi bi-download"></i> Download .bat
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-4 bg-light rounded">
+                                        <h6 class="fw-bold mb-2">Source Code / TAR.GZ</h6>
+                                        <p class="text-muted small mb-3">Full source repository on GitHub</p>
+                                        <a href="https://github.com/firesmasher-c6/FlaskCode/releases/download/v1.2/flaskcode-client.tar.gz" class="btn btn-outline-primary w-100" target="_blank">
+                                            <i class="bi bi-download"></i> Download TAR.GZ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Requirements -->
+                    <div class="card shadow-sm border-0 mb-5">
+                        <div class="card-header bg-light py-3">
+                            <h5 class="mb-0"><i class="bi bi-laptop"></i> System Requirements</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><strong>Python:</strong> 3.9 or later</li>
+                                <li class="mb-3"><strong>OS:</strong> Linux, macOS, Windows — cross-platform</li>
+                                <li class="mb-3"><strong>Dependencies:</strong> None — pure Python 3 stdlib only</li>
+                                <li class="mb-3"><strong>Requires:</strong> A running FlaskCode-Server instance to connect to</li>
+                            </ul>
+                            <div class="alert alert-info mt-4 mb-0">
+                                <small><strong>Note:</strong> This is a <em>client only</em>. You need a FlaskCode-Server running somewhere on your network to use it.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What's New -->
+                    <div class="card shadow-sm border-0 mb-5">
+                        <div class="card-header bg-light py-3">
+                            <h5 class="mb-0"><i class="bi bi-star-fill"></i> What's New</h5>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-3">Core Features</h6>
+                            <ul class="mb-4">
+                                <li><strong>Zero Dependencies:</strong> Pure Python 3.9+ stdlib — no pip install needed</li>
+                                <li><strong>Cross-Platform:</strong> Ships with <code>flaskcc.sh</code> (Linux/macOS), <code>flaskcc.ps1</code> (Windows), and <code>flaskcc.py</code> (universal)</li>
+                                <li><strong>Encrypted Connections:</strong> Automatically negotiates SHA256, SHA1, or BASE64 encryption with the server</li>
+                                <li><strong>Full Command REPL:</strong> Auth, chat, file management, notes, API key control, and debug tools all from one prompt</li>
+                                <li><strong>PIN-based Auth:</strong> Log in with a short PIN instead of typing your password every time</li>
+                                <li><strong>Server Password Support:</strong> Connect to password-protected servers with <code>--pass</code></li>
+                            </ul>
+                            <h6 class="fw-bold mb-3">Included Files</h6>
+                            <ul>
+                                <li><code>flaskcc.py</code> — main client script (cross-platform)</li>
+                                <li><code>flaskcc.sh</code> — shell wrapper for Linux/macOS</li>
+                                <li><code>flaskcc.ps1</code> — PowerShell wrapper for Windows</li>
+                                <li><code>README.md</code> — full usage documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Quick Start -->
+                    <div class="card shadow-sm border-0 mb-5">
+                        <div class="card-header bg-light py-3">
+                            <h5 class="mb-0"><i class="bi bi-lightning-fill"></i> Quick Start</h5>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-3">Linux / macOS</h6>
+                            <pre class="bg-dark text-light p-3 rounded mb-4"><code>chmod +x flaskcc.sh
+./flaskcc.sh localhost@5000
+./flaskcc.sh 192.168.1.5@5000 -p mySecret</code></pre>
+
+                            <h6 class="fw-bold mb-3">Windows (PowerShell)</h6>
+                            <pre class="bg-dark text-light p-3 rounded mb-4"><code>.\flaskcc.ps1 localhost@5000
+.\flaskcc.ps1 192.168.1.5@5000 -Pass mySecret</code></pre>
+
+                            <h6 class="fw-bold mb-3">Cross-platform (Python)</h6>
+                            <pre class="bg-dark text-light p-3 rounded mb-4"><code>python flaskcc.py localhost@5000 --pass mySecret</code></pre>
+
+                            <h6 class="fw-bold mb-3">Install in PATH (optional)</h6>
+                            <pre class="bg-dark text-light p-3 rounded mb-3"><code># Linux / macOS
+sudo cp flaskcc.sh /usr/local/bin/flaskcc
+sudo chmod +x /usr/local/bin/flaskcc
+flaskcc localhost@5000 -p mySecret</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Commands Reference -->
+                    <div class="card shadow-sm border-0 mb-5">
+                        <div class="card-header bg-light py-3">
+                            <h5 class="mb-0"><i class="bi bi-terminal"></i> Command Reference</h5>
+                        </div>
+                        <div class="card-body">
+
+                            <h6 class="fw-bold mt-2 mb-2">Flags</h6>
+                            <table class="table table-sm mb-4">
+                                <thead><tr><th>Flag</th><th>Short</th><th>Description</th></tr></thead>
+                                <tbody>
+                                    <tr><td><code>--pass PASSWORD</code></td><td><code>-p</code></td><td>Server password</td></tr>
+                                    <tr><td><code>--user USERNAME</code></td><td><code>-u</code></td><td>Auto-login on startup</td></tr>
+                                    <tr><td><code>--no-encrypt</code></td><td>—</td><td>Send password in plain text</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h6 class="fw-bold mb-2">Auth</h6>
+                            <table class="table table-sm mb-4">
+                                <thead><tr><th>Command</th><th>What it does</th></tr></thead>
+                                <tbody>
+                                    <tr><td><code>register &lt;user&gt; &lt;pass&gt;</code></td><td>Create a new account</td></tr>
+                                    <tr><td><code>login &lt;user&gt; &lt;pass&gt;</code></td><td>Log in</td></tr>
+                                    <tr><td><code>login-pin &lt;pin&gt;</code></td><td>Log in with saved PIN</td></tr>
+                                    <tr><td><code>logout</code></td><td>Save chat and log out</td></tr>
+                                    <tr><td><code>passwd &lt;old&gt; &lt;new&gt;</code></td><td>Change your password</td></tr>
+                                    <tr><td><code>whoami</code></td><td>Show username + PIN</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h6 class="fw-bold mb-2">Chat</h6>
+                            <table class="table table-sm mb-4">
+                                <thead><tr><th>Command</th><th>What it does</th></tr></thead>
+                                <tbody>
+                                    <tr><td><em>(any text)</em></td><td>Send a message to FlaskCode AI</td></tr>
+                                    <tr><td><code>model [name]</code></td><td>Show or switch the active model</td></tr>
+                                    <tr><td><code>models</code></td><td>List all available models</td></tr>
+                                    <tr><td><code>history</code></td><td>Print your full chat history</td></tr>
+                                    <tr><td><code>clear</code></td><td>Clear your chat history</td></tr>
+                                    <tr><td><code>export</code></td><td>Export chat to a .txt file on the server</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h6 class="fw-bold mb-2">Files</h6>
+                            <table class="table table-sm mb-4">
+                                <thead><tr><th>Command</th><th>What it does</th></tr></thead>
+                                <tbody>
+                                    <tr><td><code>files</code></td><td>List files available on the server</td></tr>
+                                    <tr><td><code>read &lt;filename&gt;</code></td><td>Read a file by name</td></tr>
+                                    <tr><td><code>readpath &lt;path&gt;</code></td><td>Read a file by absolute path</td></tr>
+                                    <tr><td><code>write &lt;filename&gt; [content]</code></td><td>Write/create a file</td></tr>
+                                    <tr><td><code>save-block</code></td><td>Interactively save a code block</td></tr>
+                                    <tr><td><code>clear-outputs</code></td><td>Wipe the server outputs/ folder</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h6 class="fw-bold mb-2">API Keys</h6>
+                            <table class="table table-sm mb-0">
+                                <thead><tr><th>Command</th><th>What it does</th></tr></thead>
+                                <tbody>
+                                    <tr><td><code>apikey-slot &lt;1|2|3&gt;</code></td><td>Select Gemini API key slot</td></tr>
+                                    <tr><td><code>apikey-groq [key]</code></td><td>Set your Groq API key</td></tr>
+                                    <tr><td><code>apikey-openrouter [key]</code></td><td>Set your OpenRouter API key</td></tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+
+                    <!-- Edition Switcher -->
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-header bg-primary text-white py-3">
+                            <h5 class="mb-0"><i class="bi bi-layers"></i> Release Edition</h5>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="../client-side/1.2.html" class="list-group-item list-group-item-action">
+                                <i class="bi bi-window me-2"></i>
+                                <strong>Client-Side</strong>
+                                <small class="d-block text-muted">GUI + terminal app for Windows</small>
+                            </a>
+                            <a href="../client/1.2.html" class="list-group-item list-group-item-action active">
+                                <i class="bi bi-terminal me-2"></i>
+                                <strong>Client</strong>
+                                <small class="d-block text-white-50">Terminal client for FlaskCode-Server</small>
+                            </a>
+                            <a href="../servers/linux/1.2.html" class="list-group-item list-group-item-action">
+                                <i class="bi bi-server me-2"></i>
+                                <strong>Linux Server</strong>
+                                <small class="d-block text-muted">Flask REST API server</small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Release Info -->
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-header bg-light py-3">
+                            <h5 class="mb-0">Release Info</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <small class="text-muted">Version</small>
+                                <p class="fw-bold mb-0">1.2</p>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Edition</small>
+                                <p class="fw-bold mb-0">Client (flaskcc)</p>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Release Date</small>
+                                <p class="fw-bold mb-0">July 11, 2026</p>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Status</small>
+                                <p class="fw-bold mb-0"><span class="badge bg-success">Stable</span></p>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">License</small>
+                                <p class="fw-bold mb-0">MIT</p>
+                            </div>
+                            <hr>
+                            <div class="d-grid gap-2">
+                                <a href="https://github.com/firesmasher-c6/FlaskCode/" class="btn btn-sm btn-outline-dark" target="_blank">
+                                    <i class="bi bi-github"></i> View on GitHub
+                                </a>
+                                <a href="../../guide.html" class="btn btn-sm btn-outline-primary">
+                                    <i class="bi bi-book"></i> Read Setup Guide
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features List -->
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header bg-light py-3">
+                            <h5 class="mb-0">Features</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Zero dependencies</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cross-platform</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Encrypted connections</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>PIN-based auth</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>File management</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>API key control</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Notes/remember</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Knowledge engine</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold mb-3">Flask Code</h6>
+                    <p style="color: white;">An AI-powered coding assistant for Windows developers.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../../releases.html" style="color: white; text-decoration: none;">Releases</a></li>
+                        <li><a href="../../docs.html" style="color: white; text-decoration: none;">Documentation</a></li>
+                        <li><a href="../../guide.html" style="color: white; text-decoration: none;">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Social</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://github.com/firesmasher-c6/FlaskCode/" style="color: white; text-decoration: none;" target="_blank"><i class="bi bi-github"></i> GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 Flask Code. Released under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+html, body { scrollbar-width: none !important; -ms-overflow-style: none !important; }
+html::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar { display: none !important; }
+</style>
+</body>
+</html>

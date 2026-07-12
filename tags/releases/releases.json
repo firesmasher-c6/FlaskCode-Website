@@ -1,0 +1,94 @@
+[
+    {
+        "client-side": {
+            "1.2": {
+                "isStable": "true",
+                "assets": {
+                    ".gitignore": "https://github.com/firesmasher-c6/FlaskCode/blob/main/.gitignore",
+                    "Guide.md": "https://github.com/firesmasher-c6/FlaskCode/blob/main/Guide.md",
+                    "LICENSE": "https://github.com/firesmasher-c6/FlaskCode/blob/main/LICENSE",
+                    "README.md": "https://github.com/firesmasher-c6/FlaskCode/blob/main/README.md",
+                    "apikey_settings.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/apikey_settings.py",
+                    "auth.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/auth.py",
+                    "chat_history.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/chat_history.py",
+                    "chat_loader.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/chat_loader.py",
+                    "code_extractor.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/code_extractor.py",
+                    "custom_terminal.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/custom_terminal.py",
+                    "engine.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/engine.py",
+                    "file_handler.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/file_handler.py",
+                    "flaskc.ps1": "https://github.com/firesmasher-c6/FlaskCode/blob/main/flaskc.ps1",
+                    "flaskcode.ps1": "https://github.com/firesmasher-c6/FlaskCode/blob/main/flaskcode.ps1",
+                    "flck.ps1": "https://github.com/firesmasher-c6/FlaskCode/blob/main/flck.ps1",
+                    "gemini_client.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/gemini_client.py",
+                    "groq_client.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/groq_client.py",
+                    "main.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/main.py",
+                    "markdown_highlighter.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/markdown_highlighter.py",
+                    "openrouter_client.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/openrouter_client.py",
+                    "prompt_mpde.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/prompt_mode.py",
+                    "saved_info.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/saved_info.py",
+                    "shell_actions.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/shell_actions.py",
+                    "user-interface.py": "https://github.com/firesmasher-c6/FlaskCode/blob/main/user-interface.py",
+                    "requirements.txt": "https://github.com/firesmasher-c6/FlaskCode/blob/main/requirements.txt"
+                }
+            }
+        },
+        "servers": {
+            "linux": {
+                "1.2": {
+                    "isStable": "true",
+                    "assets": {
+                        ".gitignore": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/.gitignore",
+                        "LICENSE": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/LICENSE",
+                        "README.md": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/README.md",
+                        ".apikeys": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/.apikeys",
+                        "apikey_setting.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/apikey_settings.py",
+                        "auth.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/auth.py",
+                        "chat_history.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/chat_history.py",
+                        "chat_loader.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/chat_loader.py",
+                        "code_extractor.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/code_extractor.py",
+                        "engine.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/engine.py",
+                        "file_handler.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/file_handler.py",
+                        "gemini_client.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/gemini_client.py",
+                        "groq_client.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/groq_client.py",
+                        "markdown_highlighter.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/markdown_highlighter.py",
+                        "openrouter_client.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/openrouter_client.py",
+                        "saved_info.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/saved_info.py",
+                        "shell_actions.py": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/shell_actions.py",
+                        "users.env_example": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/users.env_example",
+                        "users.pin_example": "https://github.com/firesmasher-c6/FlaskCode/blob/server/linux-1.2/users.pins_example"
+                    }
+                }
+            }
+        },
+        "client": {
+            "1.2": {
+                "isStable": "true",
+                "assets": {
+                    ".gitignore": "https://github.com/firesmasher-c6/FlaskCode/blob/client-1.2/.gitignore",
+                    "LICENSE": "https://github.com/firesmasher-c6/FlaskCode/blob/client-1.2/LICENSE",
+                    "README.md": "https://github.com/firesmasher-c6/FlaskCode/blob/client-1.2/README.md",
+                    "flaskcc.ps1": "https://github.com/firesmasher-c6/FlaskCode/blob/client-1.2/flaskcc.ps1",
+                    "flaskcc.sh": "https://github.com/firesmasher-c6/FlaskCode/blob/client-1.2/flaskcc.sh",
+                    "flaskcc.py": "https://github.com/firesmasher-c6/FlaskCode/blob/client-1.2/flaskcc.py"
+                }
+            }
+        }
+    },
+    {
+        "extras": {
+            "type": "optional",
+            "assets": {
+                "flask-config-highlighter-1.6.0.vsix": {
+                    "type": "Visual Studio Code Extension",
+                    "description": "Highlights every syntax and problems on your vs code ide.",
+                    "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode/blob/main/.vscode/flask-config-highlighter-1.6.0.vsix"
+                },
+                "knowledge.db": {
+                    "type": "Knowledge Database",
+                    "description": "Flask Code Server & Client-side Offline Knowledge.",
+                    "downloadUrl": "https://github.com/firesmasher-c6/FlaskCode/blob/main/knowledge.db"
+                }
+            }
+        }
+    }
+]

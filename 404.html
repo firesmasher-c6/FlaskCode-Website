@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Code - 404 Not Found</title>
+    <link class="icon" href="assets/icons/icon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body class="d-flex flex-column justify-content-between style-wrapper">
+
+    <!-- Hero Section -->
+    <section class="hero-section flex-grow-1 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%); color: white; padding: 2rem 0;">            
+        <div class="container">
+            <!-- Centered 404 Section -->
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="display-1 fw-black text-uppercase tracking-wider mb-1" style="color: white; font-weight: 900; opacity: 0.25; line-height: 1;">404</h2>
+                    <h3 class="display-6 fw-bold mb-3" style="color: white;">Page Not Found</h3>
+                    
+                    <!-- Toggle Details Arrow Button -->
+                    <button class="btn btn-link text-white text-decoration-none p-0 mb-3 small d-inline-flex align-items-center opacity-75" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#errorDetails" 
+                            aria-expanded="false" 
+                            aria-controls="errorDetails"
+                            id="toggleBtn">
+                        More Details <i class="bi bi-chevron-down ms-1 transition-icon"></i>
+                    </button>
+
+                    <!-- Hidden Error Paragraph -->
+                    <div class="collapse" id="errorDetails">
+                        <p class="small mb-4" style="color: rgba(255, 255, 255, 0.85); max-width: 500px; margin: 0 auto 1.5rem;">
+                            The page you are looking for might have been removed or is temporarily unavailable.
+                        </p>
+                    </div>
+
+                    <div class="mt-2">
+                        <a href="index.html" class="btn btn-light btn-md px-4 shadow-sm fw-bold" style="color: #0d6efd;">
+                            <i class="bi bi-house-door-fill me-2"></i>Back to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <h6 class="fw-bold mb-2 fs-6">Flask Code</h6>
+                    <p class="small mb-0" style="color: white;">An AI-powered coding assistant for Windows developers.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-2 fs-6">Links</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="releases.html" style="color: white; text-decoration: none;">Releases</a></li>
+                        <li><a href="docs.html" style="color: white; text-decoration: none;">Documentation</a></li>
+                        <li><a href="guide.html" style="color: white; text-decoration: none;">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-2 fs-6">Social</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="https://github.com/firesmasher-c6/FlaskCode/" style="color: white; text-decoration: none;" target="_blank"><i class="bi bi-github"></i> GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-secondary my-2">
+            <div class="text-center text-muted small">
+                <p class="mb-0" style="font-size: 0.8rem;">&copy; 2026 Flask Code. Released under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smoothly flips the arrow icon depending on collapse state
+        const toggleBtn = document.getElementById('toggleBtn');
+        const collapseEl = document.getElementById('errorDetails');
+        const icon = toggleBtn.querySelector('.transition-icon');
+
+        collapseEl.addEventListener('show.bs.collapse', () => {
+            icon.style.transform = 'rotate(180deg)';
+        });
+        collapseEl.addEventListener('hide.bs.collapse', () => {
+            icon.style.transform = 'rotate(0deg)';
+        });
+    </script>
+</body>
+</html>
+
+<style>
+html, body.style-wrapper {
+  height: 100vh !important;
+  max-height: 100vh !important;
+  overflow: hidden !important;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+.transition-icon {
+  transition: transform 0.2s ease-in-out;
+}
+</style>

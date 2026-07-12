@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Code 1.2 Release - Download</title>
-    <link rel="icon" href="assets/icons/icon.svg">
+    <title>Flask Code 1.2 – Client-Side Release</title>
+    <link rel="icon" href="../../assets/icons/icon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../assets/style.css">
@@ -21,18 +21,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../../releases.html">Releases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../docs.html">Documentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../guide.html">Guide</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../releases.html">Releases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../docs.html">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../guide.html">Guide</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/firesmasher-c6/FlaskCode/" target="_blank">
                             <i class="bi bi-github"></i> GitHub
@@ -49,6 +41,7 @@
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="../../index.html" style="color: #0d6efd; text-decoration: none; font-weight: 500;">Home</a></li>
                 <li class="breadcrumb-item"><a href="../../releases.html" style="color: #0d6efd; text-decoration: none; font-weight: 500;">Releases</a></li>
+                <li class="breadcrumb-item"><a href="#" style="color: #0d6efd; text-decoration: none; font-weight: 500;">Client-Side</a></li>
                 <li class="breadcrumb-item active" aria-current="page" style="color: #212529; font-weight: 500;">Version 1.2</li>
             </ol>
         </div>
@@ -58,20 +51,22 @@
     <section class="py-5 bg-gradient text-white">
         <div class="container">
             <h1 class="display-4 fw-bold mb-2" style="color: black;">Flask Code 1.2</h1>
-            <p class="lead mb-3" style="color: black;">First Official Release</p>
+            <p class="lead mb-3" style="color: black;">Client-Side — First Official Release</p>
             <div class="d-flex gap-3 flex-wrap">
                 <span class="badge bg-success fs-6">Latest</span>
                 <span class="badge bg-info fs-6">Stable</span>
-                <span class="badge bg-secondary fs-6">July 11, 2026</span>
+                <span class="badge bg-secondary fs-6">July 1, 2026</span>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
+    <!-- Main Content -->
     <section class="py-5">
         <div class="container">
             <div class="row">
+                <!-- Left Column -->
                 <div class="col-lg-8">
+
                     <!-- Download Card -->
                     <div class="card shadow-lg border-0 mb-5">
                         <div class="card-header bg-primary text-white py-4">
@@ -81,13 +76,10 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="p-4 bg-light rounded">
-                                        <h6 class="fw-bold mb-2">Windows Installer</h6>
-                                        <p class="text-muted small mb-3">Automated installation with file verification</p>
-                                        <a href="https://github.com/firesmasher-c6/FlaskCode/releases/download/v1.2/FlaskCode-1.2-Installer.bat" class="btn btn-primary w-100" target="_blank">
-                                            <i class="bi bi-download"></i> Download .bat [TERMINAL SETUP]
-                                        </a>
-                                        <a href="https://github.com/firesmasher-c6/FlaskCode/releases/download/v1.2/FlaskCode-1.2-Installer-[SETUP-WIZARD].pyw" class="btn btn-primary w-100" target="_blank" style="margin-top: 20px;">
-                                            <i class="bi bi-download"></i> Download .pyw [WINDOW SETUP]
+                                        <h6 class="fw-bold mb-2">FlaskCode Universal Installer</h6>
+                                        <p class="text-muted small mb-3">Automatically installs selected version, edition.</p>
+                                        <a href="https://github.com/firesmasher-c6/FlaskCode/releases/download/v1.2/FlaskCodeInstaller.bat" class="btn btn-primary w-100 mb-2" target="_blank">
+                                            <i class="bi bi-download"></i> Download .bat
                                         </a>
                                     </div>
                                 </div>
@@ -97,17 +89,6 @@
                                         <p class="text-muted small mb-3">Full source repository on GitHub</p>
                                         <a href="https://github.com/firesmasher-c6/FlaskCode/archive/refs/tags/v1.2.zip" class="btn btn-outline-primary w-100" target="_blank">
                                             <i class="bi bi-download"></i> Download ZIP
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="row g-3">
-                                    <div class="p-4 bg-light rounded">
-                                        <h6 class="fw-bold mb-2">Linux/MacOS/Termux Installer</h6>
-                                        <p class="text-muted small mb-3">Automated installation with file verification</p>
-                                        <a href="https://github.com/firesmasher-c6/FlaskCode/releases/download/v1.2/FlaskCode-1_2-Installer.sh" class="btn btn-primary w-100" target="_blank">
-                                            <i class="bi bi-download"></i> Download .sh [TERMINAL SETUP]
                                         </a>
                                     </div>
                                 </div>
@@ -122,18 +103,10 @@
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <strong>Python:</strong> 3.10 or later
-                                </li>
-                                <li class="mb-3">
-                                    <strong>OS:</strong> Windows (tested and recommended)
-                                </li>
-                                <li class="mb-3">
-                                    <strong>Tkinter:</strong> Required for GUI mode (usually included with Python on Windows)
-                                </li>
-                                <li class="mb-3">
-                                    <strong>Dependencies:</strong> PyYAML 6.0+
-                                </li>
+                                <li class="mb-3"><strong>Python:</strong> 3.10 or later</li>
+                                <li class="mb-3"><strong>OS:</strong> Windows (tested and recommended)</li>
+                                <li class="mb-3"><strong>Tkinter:</strong> Required for GUI mode (usually included with Python on Windows)</li>
+                                <li class="mb-3"><strong>Dependencies:</strong> PyYAML 6.0+</li>
                             </ul>
                             <div class="alert alert-info mt-4 mb-0">
                                 <small><strong>Linux users:</strong> Install <code>python3-tk</code> from your package manager to use GUI mode.</small>
@@ -150,13 +123,12 @@
                             <h6 class="fw-bold mb-3">Core Features</h6>
                             <ul class="mb-4">
                                 <li><strong>Multi-Provider Support:</strong> Switch between Gemini, OpenRouter, and Groq without leaving the app</li>
-                                <li><strong>GUI & Terminal Interfaces:</strong> Choose between a Tkinter desktop app or terminal chat for your workflow</li>
+                                <li><strong>GUI &amp; Terminal Interfaces:</strong> Choose between a Tkinter desktop app or terminal chat for your workflow</li>
                                 <li><strong>Persistent User Accounts:</strong> Register and log in with PIN-based authentication; settings persist per user</li>
                                 <li><strong>API Key Slot Management:</strong> Store up to three API keys (<code>key_1</code>, <code>key_2</code>, <code>key_3</code>) and switch on the fly</li>
                                 <li><strong>Markdown-Style Output:</strong> Chat responses render with rich formatting and code block support</li>
                                 <li><strong>Built-in Commands:</strong> Register accounts, switch models, manage API keys, and more from the chat prompt</li>
                             </ul>
-
                             <h6 class="fw-bold mb-3">Improvements</h6>
                             <ul>
                                 <li>YAML-backed settings storage for reliable configuration</li>
@@ -176,9 +148,7 @@
                             <h6 class="fw-bold mb-3">Installation</h6>
                             <pre class="bg-dark text-light p-3 rounded mb-3"><code>python -m pip install -r requirements.txt
 copy .apikeys_example .apikeys
-# Edit .apikeys with your API keys
-</code></pre>
-
+# Edit .apikeys with your API keys</code></pre>
                             <h6 class="fw-bold mb-3">Launch</h6>
                             <div class="row">
                                 <div class="col-md-6">
@@ -207,43 +177,48 @@ copy .apikeys_example .apikeys
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td><code>/register-as</code></td>
-                                        <td>Create a new user account</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>/login-as &lt;name&gt; &lt;password&gt;</code></td>
-                                        <td>Log in as an existing user</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>/apikey &lt;1|2|3&gt;</code></td>
-                                        <td>Switch to API key slot</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>/model &lt;name&gt;</code></td>
-                                        <td>Change provider (gemini, openrouter, groq)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>/help</code></td>
-                                        <td>Display command help</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>/logout</code></td>
-                                        <td>Log out of the current account</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>/exit</code></td>
-                                        <td>Quit the application</td>
-                                    </tr>
+                                    <tr><td><code>/register-as</code></td><td>Create a new user account</td></tr>
+                                    <tr><td><code>/login-as &lt;name&gt; &lt;password&gt;</code></td><td>Log in as an existing user</td></tr>
+                                    <tr><td><code>/apikey &lt;1|2|3&gt;</code></td><td>Switch to API key slot</td></tr>
+                                    <tr><td><code>/model &lt;name&gt;</code></td><td>Change provider (gemini, openrouter, groq)</td></tr>
+                                    <tr><td><code>/help</code></td><td>Display command help</td></tr>
+                                    <tr><td><code>/logout</code></td><td>Log out of the current account</td></tr>
+                                    <tr><td><code>/exit</code></td><td>Quit the application</td></tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Sidebar -->
                 <div class="col-lg-4">
-                    <!-- Release Info Card -->
+
+                    <!-- Edition Switcher -->
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-header bg-primary text-white py-3">
+                            <h5 class="mb-0"><i class="bi bi-layers"></i> Release Edition</h5>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="../client-side/1.2.html" class="list-group-item list-group-item-action active">
+                                <i class="bi bi-window me-2"></i>
+                                <strong>Client-Side</strong>
+                                <small class="d-block text-white-50">GUI + terminal app for Windows</small>
+                            </a>
+                            <a href="../client/1.2.html" class="list-group-item list-group-item-action">
+                                <i class="bi bi-terminal me-2"></i>
+                                <strong>Client</strong>
+                                <small class="d-block text-muted">Terminal client for FlaskCode-Server</small>
+                            </a>
+                            <a href="../servers/linux/1.2.html" class="list-group-item list-group-item-action">
+                                <i class="bi bi-server me-2"></i>
+                                <strong>Linux Server</strong>
+                                <small class="d-block text-muted">Flask REST API server</small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Release Info -->
                     <div class="card shadow-sm border-0 mb-4">
                         <div class="card-header bg-light py-3">
                             <h5 class="mb-0">Release Info</h5>
@@ -254,8 +229,12 @@ copy .apikeys_example .apikeys
                                 <p class="fw-bold mb-0">1.2</p>
                             </div>
                             <div class="mb-3">
+                                <small class="text-muted">Edition</small>
+                                <p class="fw-bold mb-0">Client-Side</p>
+                            </div>
+                            <div class="mb-3">
                                 <small class="text-muted">Release Date</small>
-                                <p class="fw-bold mb-0">July 11, 2026</p>
+                                <p class="fw-bold mb-0">July 12, 2026</p>
                             </div>
                             <div class="mb-3">
                                 <small class="text-muted">Status</small>
@@ -285,7 +264,7 @@ copy .apikeys_example .apikeys
                         <div class="card-body">
                             <ul class="list-unstyled">
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>3 AI Providers</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>GUI & Terminal</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>GUI &amp; Terminal</li>
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>User Accounts</li>
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>API Management</li>
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Markdown Output</li>
@@ -295,6 +274,7 @@ copy .apikeys_example .apikeys
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -311,9 +291,9 @@ copy .apikeys_example .apikeys
                 <div class="col-md-3">
                     <h6 class="fw-bold mb-3">Links</h6>
                     <ul class="list-unstyled">
-                        <li><a href="releases.html" style="color: white; text-decoration: none;">Releases</a></li>
-                        <li><a href="docs.html" style="color: white; text-decoration: none;">Documentation</a></li>
-                        <li><a href="guide.html" style="color: white; text-decoration: none;">Guide</a></li>
+                        <li><a href="../../releases.html" style="color: white; text-decoration: none;">Releases</a></li>
+                        <li><a href="../../docs.html" style="color: white; text-decoration: none;">Documentation</a></li>
+                        <li><a href="../../guide.html" style="color: white; text-decoration: none;">Guide</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -331,17 +311,9 @@ copy .apikeys_example .apikeys
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+html, body { scrollbar-width: none !important; -ms-overflow-style: none !important; }
+html::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar { display: none !important; }
+</style>
 </body>
 </html>
-<style>
-html, body {
-  scrollbar-width: none !important;
-  -ms-overflow-style: none !important;
-}
-
-html::-webkit-scrollbar, 
-body::-webkit-scrollbar,
-*::-webkit-scrollbar {
-  display: none !important;
-}
-</style>
